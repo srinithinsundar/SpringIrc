@@ -1,8 +1,11 @@
 package com.example.demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Program2 {
 	private int id;
 	private String name;
+	@JsonIgnore
 	private int age;
 	
 	Program2(){
