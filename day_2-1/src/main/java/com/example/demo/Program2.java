@@ -1,7 +1,7 @@
 package com.example.demo;
 
 public class Program2 {
-	public int id;
+	private int id;
 	private String name;
 	private int age;
 	
