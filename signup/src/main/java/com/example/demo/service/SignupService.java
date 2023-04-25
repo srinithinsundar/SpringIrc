@@ -1,5 +1,8 @@
 package com.example.demo.service;
 
+import java.util.List;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +17,16 @@ public class SignupService {
 	{
 		return crepo.save(d);
 	}
+public List<SignupModel> getDetails()
+{
+	return crepo.findAll();
+}
+public SignupModel updateDetails(SignupModel sM) {
+	return crepo.saveAndFlush(sM);
+}
+public void deleteDetails(int id) {
+	crepo.deleteById(id);
+	
+}
 
 }
